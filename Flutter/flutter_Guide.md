@@ -6,6 +6,11 @@
 3. press y to accept every license.
 ## 플러터 위젯 계층 
 ![플러터 위젯 계층 이미지](./img/flutter-1.png)
+## UI 위젯 트리 다이어그램
+![UI 위젯 트리 다이어그램](./img/flutter-2.png)
+## 위젯 정렬
+![Row](./img/flutter-3.png) ![Column](./img/flutter-4.png)
+
 ## 레이아웃 만들기
 아이템을 수평으로 정렬 ```row``` 위젯
 아이템을 수직으로 정렬 ```Column``` 위젯
