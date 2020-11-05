@@ -10,7 +10,8 @@
 ![UI 위젯 트리 다이어그램](./img/flutter-2.png)
 ## 위젯 정렬
 ![Row](./img/flutter-3.png) ![Column](./img/flutter-4.png)
-
+## 문법
+```textField``` row로 사용시 width 조정이 필요하다
 ## 레이아웃 만들기
 아이템을 수평으로 정렬 ```row``` 위젯
 아이템을 수직으로 정렬 ```Column``` 위젯
