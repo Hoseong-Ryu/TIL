@@ -11,7 +11,9 @@
 ## 위젯 정렬
 ![Row](./img/flutter-3.png) ![Column](./img/flutter-4.png)
 ## 문법
-```textField``` row로 사용시 width 조정이 필요하다
+row로 ```textField``` 사용시 width 조정이 필요하다.
+```Navigator.push()```를 통해 새로운 route로 전환 할 수 있다.
+현재 루트에서 ```Navigator.pop()```으로 이전 루트로 빠져나갈 수 있다.
 ## 레이아웃 만들기
 아이템을 수평으로 정렬 ```row``` 위젯
 아이템을 수직으로 정렬 ```Column``` 위젯
@@ -36,4 +38,5 @@ cd myapp
 ~~~
 flutter build web
 ~~~
-
+## 알고 있으면 좋을 것 같은 것
+```navigator```은 Last in First Out 방식으로 스택을 관리한다
