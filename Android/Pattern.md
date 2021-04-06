@@ -1,4 +1,3 @@
-# ANDROID
 ## MVVM 패턴
 ### 개념
 - 액티비티에 기능을 붙이다보면 액티비티가 무거워지거나 혹은 종속성이 너무 강해 테스트가 힘들고 유지보수가 어려워진다. 이런 고민 때문에 MVVM 패턴이 등장했다. MVVM은 `View` - `ViewModel` - `Model`을 이용해 각각의 역할을 분리하여 가독성과 재사용성을 높인 디자인 패턴이다. 
@@ -9,38 +8,9 @@
 - 기능별로 모듈화되어있어 유닛테스트가 쉽다.
 ### 단점
 - 다른 아키텍처보다 클래스가 많아서 복잡하다.
-### 
-## Jetpack
-### DataBinding
-- gradle 설정
-  ~~~
-    android {
-       buildFeatures {
-            dataBinding = true
-        } 
-    }
-  ~~~
-  ~~~
-  <layout>
-
-    <data>
-        <variable
-            name="tripList"
-            type="com.example.프로젝트 이름.<dataclass이름>" />
-    </data>
-  </layout>
-  ~~~
-- xml코드에 `<layout>`으로 시작한다.
-- 양방향 데이터 바인딩을 지원한다.
-
-### ViewBinding
-- gradle 설정
-  ~~~
-    android {
-       buildFeatures {
-            viewBinding = true
-        } 
-    }
-  ~~~
-- 뷰 바인딩 무시 속성을 추가 할 수 있다.
-- `DataBinding`보다 컴파일 시간이 더 빠르다 
+### 내가 이해하는대로
+- MVVM은 기능 확장이 쉬운 디자인 패턴이다.
+- ```Model```은 데이터 저장소
+- ```ViewModel```은 기능 실행을 위해서 ```Model```과 통신
+- ```View```는 ```ViewModel```에서 이벤트와 데이터를 가져다 쓴다.
+- 이 아키텍처는 ```ViewModel```사용이 중요하다. 왜냐하면 ```ViewModel```이 ```View```가 필요한 이벤트와 데이터들을 가지고 있으면서 ```Model```이 가지고 있는 데이터와 통신도 해야하기 때문이다.
