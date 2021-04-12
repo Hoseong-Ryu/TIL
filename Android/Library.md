@@ -1,4 +1,6 @@
 # ANDROID
+## RxJava
+
 ## Jetpack
 ### DataBinding
 - gradle 설정
